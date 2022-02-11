@@ -28,14 +28,24 @@ The number of nodes in the list is in the range [1, 100].
 
 /**
  * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
  */
+public class ListNode {
+
+    int val;
+    ListNode next;
+
+    ListNode () {
+    }
+
+    ListNode (int val) { 
+        this.val = val; 
+    }
+    ListNode (int val, ListNode next) { 
+        this.val = val; 
+        this.next = next; 
+    }
+}
+
  // Solution 1: First to get the size of ListNode, then get middle value by second loop.
 class Solution {
     public ListNode middleNode(ListNode head) {
